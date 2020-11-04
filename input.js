@@ -30,6 +30,12 @@ const handleUserInputs = function() {
     else if (key === 'd') {
       connection.write("Move: right")
     }
+    else if (key === 'c') {
+      connection.write('Say: snekofSTEEL')
+    }
+    else if (key === 'f') {
+      connection.write('Say: snekofEARTH')
+    }
   });
 };
 
