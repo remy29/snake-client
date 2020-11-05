@@ -17,24 +17,18 @@ const handleUserInputs = function() {
   stdin.on('data', (key) => {
     if (key === '\u0003') {
       process.exit();
-    }
-    else if (key === 'w') {
-      connection.write("Move: up")
-    }
-    else if (key === 'a') {
-      connection.write("Move: left")
-    }
-    else if (key === 's') {
-      connection.write("Move: down")
-    }
-    else if (key === 'd') {
-      connection.write("Move: right")
-    }
-    else if (key === 'c') {
-      connection.write('Say: snekofSTEEL')
-    }
-    else if (key === 'f') {
-      connection.write('Say: snekofEARTH')
+    } else if (key === 'w') {
+      connection.write("Move: up");
+    } else if (key === 'a') {
+      connection.write("Move: left");
+    } else if (key === 's') {
+      connection.write("Move: down");
+    } else if (key === 'd') {
+      connection.write("Move: right");
+    } else if (key === 'c') {
+      connection.write('Say: snekofSTEEL');
+    } else if (key === 'f') {
+      connection.write('Say: snekofEARTH');
     }
   });
 };
